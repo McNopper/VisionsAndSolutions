@@ -1,8 +1,8 @@
 # Visions & Solutions
 
 Source for the **Visions & Solutions** website — the personal landing page
-of Norbert Nopper's freelance consulting practice in **Artificial
-Intelligence** and **Computer Graphics**, launching in Q4/2026.
+of Norbert Nopper's freelance consulting practice, with a primary focus on
+**Artificial Intelligence** and **Computer Graphics**, launching in Q4/2026.
 
 🌐 **Live site:** <https://nopper.tv/vs/>
 
