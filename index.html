@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visions and Solutions — Norbert Nopper · AI &amp; Computer Graphics Consulting</title>
-    <meta name="description" content="Visions and Solutions — freelance consulting by Norbert Nopper in Artificial Intelligence (Agentic AI, Multi-Agent AI, Catallaxy) and Computer Graphics (3D / 4D / XR Gaussian Splatting). Launching Q4/2026.">
+    <meta name="description" content="Visions and Solutions — freelance consulting by Norbert Nopper in Artificial Intelligence (Agentic AI, Multi-Agent AI, Agentic Catallaxy) and Computer Graphics (Radiance Fields, Ray Tracing, Rasterization). Launching Q4/2026.">
     <meta name="author" content="Norbert Nopper">
-    <meta name="keywords" content="Norbert Nopper, freelance consulting, Artificial Intelligence, Agentic AI, Multi-Agent AI, Catallaxy, Computer Graphics, 3D Gaussian Splatting, 4D Gaussian Splatting, XR Gaussian Splatting, OpenUSD, glTF, Khronos">
+    <meta name="keywords" content="Norbert Nopper, freelance consulting, Artificial Intelligence, Agentic AI, Multi-Agent AI, Agentic Catallaxy, Computer Graphics, Radiance Fields, NeRFs, 3D Gaussian Splatting, 4D Gaussian Splatting, Ray Tracing, Path Tracing, Real-Time Ray Tracing, Hybrid Rendering, Rasterization, Rendering for Embedded, Real-Time PBR, Physically Based Rendering, GPU-Driven Rendering, OpenUSD, glTF, Khronos">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="./">
 
@@ -267,14 +267,28 @@
                     <circle cx="22" cy="4" r="2"/><circle cx="22" cy="20" r="2"/>
                     <circle cx="12" cy="12" r="2"/>
                 </svg>
-                <span>Catallaxy<br><span class="sub">Agentic Metaverse</span></span>
+                <span>Agentic Catallaxy</span>
             </div>
 
-            <!-- CG: domain label -->
+            <!-- Radiance Fields: domain label -->
             <div class="topic-domain">
-                <span>Computer Graphics</span>
+                <span>Radiance Fields</span>
             </div>
-            <!-- CG: steps 1–3 -->
+            <!-- Radiance Fields: steps 1–3 -->
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="2.5"/>
+                    <line x1="12" y1="2" x2="12" y2="6.5"/>
+                    <line x1="12" y1="22" x2="12" y2="17.5"/>
+                    <line x1="2" y1="12" x2="6.5" y2="12"/>
+                    <line x1="22" y1="12" x2="17.5" y2="12"/>
+                    <line x1="5" y1="5" x2="8.2" y2="8.2"/>
+                    <line x1="19" y1="19" x2="15.8" y2="15.8"/>
+                    <line x1="19" y1="5" x2="15.8" y2="8.2"/>
+                    <line x1="5" y1="19" x2="8.2" y2="15.8"/>
+                </svg>
+                <span>NeRFs</span>
+            </div>
             <div class="topic">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M12 2l9 5v10l-9 5-9-5V7z"/><polyline points="3,7 12,12 21,7"/><line x1="12" y1="12" x2="12" y2="22"/>
@@ -293,36 +307,70 @@
                 </svg>
                 <span>4D Gaussian Splatting</span>
             </div>
+
+            <!-- Ray Tracing: domain label -->
+            <div class="topic-domain">
+                <span>Ray Tracing</span>
+            </div>
+            <!-- Ray Tracing: steps 1–3 -->
             <div class="topic">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <!-- Cube 1 (left) -->
-                    <polyline points="1,6 5,4 9,6 5,8 1,6"/>
-                    <polyline points="1,6 1,12 5,14 5,8"/>
-                    <polyline points="9,6 9,12 5,14"/>
-                    <!-- Cube 2 (right, interleaved: shares left edge with cube 1's right) -->
-                    <polyline points="9,6 13,4 17,6 13,8 9,6"/>
-                    <polyline points="9,6 9,12 13,14 13,8"/>
-                    <polyline points="17,6 17,12 13,14"/>
-                    <!-- Time arrow below -->
-                    <line x1="3" y1="19" x2="19" y2="19"/>
-                    <polyline points="17,17 19,19 17,21"/>
+                    <circle cx="4" cy="5" r="1.5"/>
+                    <polyline points="5,6 13,13 10,20.5"/>
+                    <line x1="3" y1="21" x2="21" y2="21"/>
                 </svg>
-                <span>XR Gaussian Splatting<br><span class="sub">Graphical Metaverse</span></span>
+                <span>Path Tracing</span>
+            </div>
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="8" y="8" width="8" height="8" rx="1"/>
+                    <line x1="12" y1="8" x2="12" y2="4"/>
+                    <line x1="12" y1="16" x2="12" y2="20"/>
+                    <line x1="8" y1="12" x2="4" y2="12"/>
+                    <line x1="16" y1="12" x2="20" y2="12"/>
+                </svg>
+                <span>Real-Time Ray Tracing</span>
+            </div>
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <line x1="12" y1="5" x2="12" y2="19"/>
+                </svg>
+                <span>Hybrid Rendering</span>
             </div>
 
-        </div>
-        <!-- Progress indicator (cols 2–4) -->
-        <div style="display:grid; grid-template-columns: repeat(4,1fr); margin-top:0.6rem;">
-            <div></div>
-            <div style="grid-column: 2 / 5; display:flex; align-items:center; gap:0.5rem; padding-left:0.75rem;">
-                <span style="font-size:0.68rem; color:var(--text-dim); letter-spacing:0.06em; text-transform:uppercase; white-space:nowrap;">Today</span>
-                <div style="flex:1; height:1px; background:linear-gradient(to right, var(--border), var(--green-mid)); position:relative;">
-                    <span style="position:absolute; right:-1px; top:-4px; width:0; height:0;
-                        border-top:4px solid transparent; border-bottom:4px solid transparent;
-                        border-left:6px solid var(--green-mid);"></span>
-                </div>
-                <span style="font-size:0.68rem; color:var(--text-dim); letter-spacing:0.06em; text-transform:uppercase; white-space:nowrap;">Vision</span>
+            <!-- Rasterization: domain label -->
+            <div class="topic-domain">
+                <span>Rasterization</span>
             </div>
+            <!-- Rasterization: steps 1–3 -->
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="10" rx="1"/>
+                    <rect x="8" y="10" width="8" height="4" rx="0.5"/>
+                    <line x1="5" y1="9.5" x2="5" y2="14.5"/>
+                    <line x1="6.5" y1="9.5" x2="6.5" y2="14.5"/>
+                    <line x1="17.5" y1="9.5" x2="17.5" y2="14.5"/>
+                    <line x1="19" y1="9.5" x2="19" y2="14.5"/>
+                </svg>
+                <span>Rendering for Embedded</span>
+            </div>
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"/>
+                    <circle cx="9" cy="9" r="2"/>
+                </svg>
+                <span>Real-Time PBR</span>
+            </div>
+            <div class="topic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 13a9 9 0 0118 0"/>
+                    <line x1="12" y1="13" x2="16" y2="9"/>
+                    <circle cx="12" cy="13" r="1"/>
+                </svg>
+                <span>GPU-Driven Rendering</span>
+            </div>
+
         </div>
     </div>
 
@@ -438,9 +486,9 @@
                     <span>Software Development</span>
                 </div>
                 <div style="padding-left: calc(20px + 0.55rem); margin-top: 0.3rem; display: flex; flex-direction: column; gap: 0.25rem;">
-                    <span style="font-size:0.85rem; color:var(--text-dim);">• C/C++</span>
-                    <span style="font-size:0.85rem; color:var(--text-dim);">• Python</span>
-                    <span style="font-size:0.85rem; color:var(--text-dim);">• OpenGL &amp; Vulkan</span>
+                    <span style="font-size:0.85rem; color:var(--text-dim);">• C/C++, Python, etc.</span>
+                    <span style="font-size:0.85rem; color:var(--text-dim);">• Architecture</span>
+                    <span style="font-size:0.85rem; color:var(--text-dim);">• Graphics &amp; AI</span>
                     <span style="font-size:0.85rem; color:var(--text-dim);">• <a href="https://github.com/McNopper" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Open Source</a></span>
                 </div>
             </div>
