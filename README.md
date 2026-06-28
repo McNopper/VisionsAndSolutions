@@ -15,7 +15,8 @@ of Norbert Nopper's freelance consulting practice, with a primary focus on
 ## Contact
 
 Reach out to Norbert Nopper on
-[LinkedIn](https://www.linkedin.com/in/norbertnopper/).
+[LinkedIn](https://www.linkedin.com/in/norbertnopper/) or via email at
+[Norbert.Nopper@googlemail.com](mailto:Norbert.Nopper@googlemail.com).
 
 ## License
 

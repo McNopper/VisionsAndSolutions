@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visions and Solutions — Norbert Nopper · AI &amp; Computer Graphics Consulting</title>
-    <meta name="description" content="Visions and Solutions — freelance consulting by Norbert Nopper in Artificial Intelligence (Agentic AI, Multi-Agent AI, Agentic Catallaxy) and Computer Graphics (Radiance Fields, Ray Tracing, Rasterization). Launching Q4/2026.">
+    <title>Visions &amp; Solutions — Norbert Nopper · AI &amp; Computer Graphics Consulting</title>
+    <meta name="description" content="Visions & Solutions — from idea to implementation. Freelance consulting by Norbert Nopper in Artificial Intelligence (Agentic AI, Multi-Agent AI, Agentic Catallaxy) and Computer Graphics (Radiance Fields, Ray Tracing, Rasterization). Next availability in 11/2026.">
     <meta name="author" content="Norbert Nopper">
     <meta name="keywords" content="Norbert Nopper, freelance consulting, Artificial Intelligence, Agentic AI, Multi-Agent AI, Agentic Catallaxy, Computer Graphics, Radiance Fields, NeRFs, 3D Gaussian Splatting, 4D Gaussian Splatting, Ray Tracing, Path Tracing, Real-Time Ray Tracing, Hybrid Rendering, Rasterization, Rendering for Embedded, Real-Time PBR, Physically Based Rendering, GPU-Driven Rendering, OpenUSD, glTF, Khronos">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="./">
+    <link rel="canonical" href="https://nopper.tv/vs/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Visions and Solutions — Norbert Nopper">
-    <meta property="og:description" content="Freelance consulting in Artificial Intelligence and Computer Graphics. Launching Q4/2026.">
-    <meta property="og:url" content="./">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:site_name" content="Visions and Solutions">
+    <meta property="og:title" content="Visions & Solutions — Norbert Nopper">
+    <meta property="og:description" content="From idea to implementation. Freelance consulting in Artificial Intelligence and Computer Graphics. Next availability in 11/2026.">
+    <meta property="og:url" content="https://nopper.tv/vs/">
+    <meta property="og:image" content="https://nopper.tv/vs/images/logo.png">
+    <meta property="og:site_name" content="Visions & Solutions">
 
     <!-- Twitter / X card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Visions and Solutions — Norbert Nopper">
-    <meta name="twitter:description" content="Freelance consulting in AI and Computer Graphics. Launching Q4/2026.">
-    <meta name="twitter:image" content="images/logo.png">
+    <meta name="twitter:title" content="Visions & Solutions — Norbert Nopper">
+    <meta name="twitter:description" content="From idea to implementation. Freelance consulting in AI and Computer Graphics. Next availability in 11/2026.">
+    <meta name="twitter:image" content="https://nopper.tv/vs/images/logo.png">
 
     <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="icon" href="images/logo.png" type="image/png">
@@ -72,21 +72,22 @@
             margin-bottom: 0.35rem;
         }
 
-        .tagline {
-            font-size: clamp(0.78rem, 1.8vw, 0.9rem);
-            color: var(--text-dim);
+        .strapline {
+            font-size: clamp(0.95rem, 2.4vw, 1.2rem);
+            font-weight: 600;
+            color: var(--green-mid);
             text-align: center;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
+            letter-spacing: 0.01em;
+            margin-bottom: 0.5rem;
         }
 
-        /* ── Launch badge ── */
-        .launch {
-            display: inline-block;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            letter-spacing: 0.04em;
+        /* ── Main content wrapper ── */
+        main {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* ── Section ── */
@@ -130,12 +131,6 @@
             color: var(--green-mid);
         }
 
-        .topic .sub {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            letter-spacing: 0.04em;
-        }
-
         /* ── Solutions domain label (col 1) ── */
         .topic-domain {
             display: flex;
@@ -149,13 +144,6 @@
             border-right: 1px solid var(--border);
         }
 
-        .topic-domain svg {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            color: var(--green-mid);
-        }
-
         .solutions-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -165,28 +153,8 @@
         .solutions-grid .topic {
             padding-left: 0.75rem;
         }
-        hr {
-            width: 100%;
-            max-width: 900px;
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 1rem 0 1.75rem;
-        }
 
         /* ── Contact ── */
-        .contact {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-        }
-
-        .contact-name {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--green-dark);
-        }
-
         .contact-link {
             display: flex;
             align-items: center;
@@ -207,24 +175,74 @@
 
         /* ── Footer ── */
         footer {
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             font-size: 0.75rem;
-            color: var(--border);
+            color: var(--text-dim);
             letter-spacing: 0.04em;
         }
 
-        /* Mobile zooms in — no column reflow needed */
+        /* ── Responsive: collapse fixed grids on narrow screens ── */
+        @media (max-width: 700px) {
+            body {
+                padding: 2.5rem 1rem;
+            }
+
+            .topic {
+                white-space: normal;
+            }
+
+            .topic-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .topic-domain {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                padding-right: 0;
+                margin-top: 0.75rem;
+            }
+
+            .solutions-grid .topic-domain:first-child {
+                margin-top: 0;
+            }
+
+            .solutions-grid .topic {
+                padding-left: calc(20px + 0.55rem);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                row-gap: 0.75rem;
+            }
+
+            .contact-grid > div {
+                grid-column: 1 / -1 !important;
+                padding-left: 0 !important;
+            }
+        }
+
+        @media (max-width: 460px) {
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <img class="logo" src="images/logo.svg" alt="Visions and Solutions" width="110" height="110">
+    <img class="logo" src="images/logo.svg" alt="" width="110" height="110">
     <h1>Visions &amp; Solutions</h1>
-    <p class="tagline">Artificial Intelligence &amp; Computer Graphics</p>
+    <p class="strapline">From idea to implementation</p>
 
+  <main>
     <!-- About -->
     <div class="topics-section">
-        <div class="section-label">About</div>
+        <h2 class="section-label">About</h2>
         <blockquote style="padding-left: 0; margin: 0; font-size:0.85rem; color:var(--green-dark); line-height:1.45; font-style:normal;">
             Real-time rendering and AI expert · glTF co-specifier · Khronos contributor · 20+ years work experience.<br>
             Strategic thinker, team leader, and open-source contributor — with a primary focus on Computer Graphics and Agentic AI.
@@ -233,7 +251,7 @@
 
     <!-- Solutions -->
     <div class="topics-section">
-        <div class="section-label">Focus Areas</div>
+        <h2 class="section-label">Focus Areas <span style="text-transform:none; font-weight:400;">— Artificial Intelligence &amp; Computer Graphics</span></h2>
         <div class="solutions-grid">
 
             <!-- AI: domain label -->
@@ -376,7 +394,7 @@
 
     <!-- Businesses -->
     <div class="topics-section">
-        <div class="section-label">Businesses</div>
+        <h2 class="section-label">Businesses</h2>
         <div class="topic-grid" style="align-items: start;">
             <div>
                 <div class="topic">
@@ -430,7 +448,7 @@
 
     <!-- Services -->
     <div class="topics-section">
-        <div class="section-label">Services</div>
+        <h2 class="section-label">Services</h2>
         <div class="topic-grid" style="align-items: start;">
             <div>
                 <div class="topic">
@@ -497,7 +515,7 @@
 
     <!-- Locations -->
     <div class="topics-section">
-        <div class="section-label">Locations</div>
+        <h2 class="section-label">Locations</h2>
         <div class="topic-grid">
             <div class="topic">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -526,33 +544,34 @@
                     <circle cx="12" cy="12" r="10"/>
                     <polyline points="12,6 12,12 16,14"/>
                 </svg>
-                <em>On Demand</em>
+                <span>On Demand</span>
             </div>
         </div>
     </div>
 
     <div class="topics-section">
-        <div class="section-label">Contact</div>
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); padding:0.35rem 0; align-items:center;">
-            <div style="grid-column:1/3; display:flex; align-items:center; gap:0.55rem;">
+        <h2 class="section-label">Contact</h2>
+        <div class="contact-grid" style="display:grid; grid-template-columns:repeat(4,1fr); padding:0.35rem 0; align-items:start;">
+            <div style="grid-column:1/3; display:flex; align-items:flex-start; gap:0.55rem;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;color:var(--green-mid);" aria-hidden="true">
                     <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/>
                     <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/>
                     <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
                 </svg>
-                <span style="font-size:1rem; color:var(--green-dark);">Launching in Q4/2026.</span>
+                <span style="font-size:1rem; color:var(--green-dark);">Next availability<br><strong>11/2026</strong></span>
             </div>
-            <div style="grid-column:3/5; display:flex; align-items:center; gap:0.55rem; padding-left:0.75rem;">
+            <div style="grid-column:3/5; display:flex; align-items:flex-start; gap:0.55rem; padding-left:0.75rem;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;color:var(--green-mid);" aria-hidden="true">
                     <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
                     <circle cx="12" cy="7" r="4"/>
                 </svg>
-                <span style="font-size:1rem; color:var(--green-dark);">Contact <a class="contact-link" style="display:inline-flex; font-weight:600;" href="https://www.linkedin.com/in/norbertnopper/" target="_blank" rel="noopener">Norbert Nopper on LinkedIn</a>.</span>
+                <span style="font-size:1rem; color:var(--green-dark);">Contact <a class="contact-link" style="display:inline-flex; font-weight:600;" href="https://www.linkedin.com/in/norbertnopper/" target="_blank" rel="noopener">Norbert Nopper on LinkedIn</a> <i>or</i> <a class="contact-link" style="display:inline-flex; font-weight:600;" href="mailto:Norbert.Nopper@googlemail.com">Norbert.Nopper@googlemail.com</a></span>
             </div>
         </div>
     </div>
+  </main>
 
-    <footer style="margin-top:2rem; font-size:0.75rem; color:var(--text-dim); text-align:center;">
+    <footer style="margin-top:0.5rem; font-size:0.75rem; color:var(--text-dim); text-align:center;">
         &copy; <span id="year"></span> <a href="https://nopper.tv/" target="_blank" rel="noopener" style="color:var(--text-dim); text-decoration:none;">Norbert Nopper</a>
     </footer>
 
